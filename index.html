@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>桜 Sakura Chat</title>
+<link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Zen+Maru+Gothic:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://unpkg.com/peerjs@1.5.4/dist/peerjs.min.js"></script>
+</head><body>
+<canvas id="bg"></canvas><div id="petals"></div>
+<div id="app">
+  <section id="join" class="glass">
+    <h1>桜チャット<small>SAKURA CHAT</small></h1>
+    <p class="mu">Choose a secret room code. Your friend types the same one.</p>
+    <input id="name" placeholder="your name" maxlength="16">
+    <input id="room" placeholder="secret room code" maxlength="30">
+    <button id="go" class="big">Enter the room</button>
+  </section>
+  <div id="chatwrap" hidden>
+    <section id="stage" class="glass" hidden>
+      <video id="v" autoplay playsinline controls></video>
+      <div id="stageBar"><span>📺 Movie night</span><span><button id="fs" class="ib">⛶</button><button id="leave" class="ib">✕</button></span></div>
+    </section>
+    <section id="chat" class="glass">
+      <div class="top"><i id="dot"></i><b id="stat">connecting…</b>
+        <span><button id="bTalk" class="ib" title="Voice chat">🎧</button><button id="bShare" class="ib" title="Share screen">📺</button><button id="bGame" class="ib" title="Games">🎮</button><button id="bClear" class="ib" title="Clear history">🗑️</button></span></div>
+      <div id="note" hidden></div>
+      <div id="msgs"></div>
+      <div id="panel" hidden></div>
+      <div class="tools">
+        <button id="bEmo" class="ib">😊</button><button id="bStk" class="ib">✨</button><button id="bGif" class="ib gif">GIF</button>
+        <button id="bImg" class="ib">🖼️</button><input type="file" id="file" accept="image/*" hidden>
+        <button id="bMic" class="ib" title="Hold to record">🎤</button>
+      </div>
+      <div class="send"><input id="txt" placeholder="say something…" autocomplete="off"><button id="bSend" class="big">➤</button></div>
+    </section>
+  </div>
+</div>
+<audio id="va" autoplay></audio>
+<div id="arcade" hidden><div class="glass"><button id="arcClose" class="ib">✕</button><div id="arcBody"></div></div></div>
+<script src="app.js"></script>
+</body></html>
