@@ -1,6 +1,6 @@
 # FriendChato
 
-A private chat room for two. Open the site on two devices, type the same secret room code, and you can text, send photos and voice notes, use animated stickers, play games, talk by voice, and watch movies together with a shared screen. No accounts, no database, no server of your own.
+A private chat room for two. Open the site on two devices, type the same secret room code, and you can text, send photos and voice notes, use animated stickers, play games, talk by voice, and watch movies together with a shared screen. 
 
 **Live demo:** [https://friendchato.netlify.app/](https://friendchato.netlify.app/)
 
